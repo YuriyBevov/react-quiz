@@ -74,6 +74,7 @@ class Quiz extends Component {
     })
   }
 
+
   async componentDidMount() {
     try {
       const response = await axios.get(`quizes/${this.props.match.params.id}.json`)
@@ -89,6 +90,7 @@ class Quiz extends Component {
   }
 
   render() {
+
     return (
       <div className={classes.Quiz}>
 
@@ -115,9 +117,6 @@ class Quiz extends Component {
                   />
 
           }
-
-
-
 
         </div>
       </div>

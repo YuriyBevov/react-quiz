@@ -42,7 +42,7 @@ export default class QuizCreator extends Component {
     event.preventDefault()
   }
 
-  addQuestionHandlerHandler = event => {
+  addQuestionHandler = event => {
     event.preventDefault()
 
     const quiz = this.state.quiz.concat()
@@ -154,7 +154,7 @@ export default class QuizCreator extends Component {
 
             <Button
               type="primary"
-              onClick={this.addQuestionHandlerHandler}
+              onClick={this.addQuestionHandler}
               disabled={!this.state.isFormValid}
             >
               Добавить вопрос
